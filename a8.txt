@@ -1,0 +1,37 @@
+Script started on 2022-09-24 21:14:21-04:00
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ grep "quoted" downloaded_tweets_extend_nolf2.tsv | cut -f 4 | tr "," "\n" | tr [:upper:] [:lower:]| tr -d ' ' | tr -d '\"' |tr -d '"\'|  sort | uniq -c | sort -nr | head -n 30
+tr: warning: an unescaped backslash at end of string is not portable
+    241 covid19
+    151 standwithukraine
+    140 votefordout
+    124 ableg
+    119 covid19ab
+    115 genocide
+    105 onpoli
+    100 nevervoteconservative
+     93 bcpoli
+     86 covidisairborne
+     85 ukraine
+     78 maskmandate
+     74 ontario
+     68 covid19bc
+     65 maskup
+     64 putin
+     64 bds
+     60 putinhitler
+     59 cdnpoli
+     57 ottawa
+     57 longcovid
+     56 canada
+     54 bced
+     53 covidisnotover
+     53 covid
+     51 omicron
+     49 vote
+     47 putinwarcriminal
+     46 votethemallout2022
+     46 freepalestine
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ exit
+8. These are the quoted tweets used with the following hastags. The hashtags have been 
+converted to lower case bc twitter is case insensative. 
+Script done on 2022-09-24 21:14:32-04:00

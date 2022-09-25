@@ -1,0 +1,40 @@
+Script started on 2022-09-24 21:06:01-04:00
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ cut -f 4 downloaded_tweets_extend_nolf2.tsv | tr "," "\n" | tr [:upper:] [:lower:]| tr -d ' ' | tr -d '\"' |tr -d '"\'|  sort | uniq -c | sort -nr | head -n 31
+tr: warning: an unescaped backslash at end of string is not portable
+  20647 
+   2910 ukraine
+   1935 covid19
+   1317 longcovid
+   1140 russia
+    897 followbackfriday
+    895 fbpe
+    794 standwithukraine
+    536 putinhitler
+    491 russian
+    480 omicron
+    450 covid
+    429 breaking
+    426 putin
+    384 auspol
+    384 ableg
+    359 mariupol
+    351 kyiv
+    345 bcpoli
+    340 covidisairborne
+    308 stopputinnow
+    302 pmqs
+    295 partygate
+    285 genocide
+    280 เจ้าแก้มก้อน
+    274 putinwarcriminal
+    273 ottawa
+    263 russiasanctions
+    260 ukrainian
+    260 cdnpoli
+    260 boycottrussia
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ exit
+5. These are the top 30 hashtags used the most overall, regardless of capitalization
+
+
+
+Script done on 2022-09-24 21:06:24-04:00

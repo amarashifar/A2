@@ -1,0 +1,39 @@
+Script started on 2022-09-24 21:15:15-04:00
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ grep "replied_to" downloaded_tweets_extend_nolf2.tsv | cut -f 4 | tr "," "\n" | tr [:upper:] [:lower:]| tr -d ' ' | tr -d '\"' |tr -d '"\'|  sort | uniq -c | sort -nr | head -n 30[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1@r[1@e[1@p[1@l[1@i[1@e[1@d[1@_[1@t[1@o
+tr: warning: an unescaped backslash at end of string is not portable
+    883 fbpe
+    876 followbackfriday
+    429 putinhitler
+    319 standwithukraine
+    291 covid19
+    216 stopputinnow
+    211 russiasanctions
+    207 boycottrussia
+    191 putinwarcriminal
+    181 bcpoli
+    149 ottawa
+    130 bced
+    124 covid19bc
+    121 genocide
+    108 nevervoteconservative
+    107 ukraine
+    106 boycottatp
+    102 longcovid
+    101 onpoli
+     99 covidisairborne
+     92 votefordout
+     86 apartheid
+     84 climatecrisis
+     79 putin
+     73 canada
+     65 cdnpoli
+     64 ukraineinvasion
+     62 n95
+     60 ontario
+     59 maskup
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ exit
+These are the hashtags which have been used in replied_to tweets. The command makes every hashtag
+lower case since twitter is case insensetive. 
+
+
+Script done on 2022-09-24 21:15:52-04:00

@@ -1,0 +1,29 @@
+Script started on 2022-09-20 21:26:55-04:00
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ cut -f 2 ' ' downloaded_tweets_extend_original_nolf.txt > repliedTheMost.txt
+cut: ' ': No such file or directory
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ sort repliedTheMost.txt | uniq -c | sort -n | tail -n 10
+    160 1290232189615890000
+    179 1229752606714720000
+    179 380648579
+    189 42836999
+    253 1219232377605640000
+    256 1231514832479940000
+    278 163018653
+    281 1495480590572960000
+    389 1891490382
+    529 18831926
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ exit
+
+Script done on 2022-09-20 21:27:23-04:00
+Find the top 10 users who replied the most to other users? 
+These are the top ten users who replied the most to the other users
+160 1290232189615890000
+    179 1229752606714720000
+    179 380648579
+    189 42836999
+    253 1219232377605640000
+    256 1231514832479940000
+    278 163018653
+    281 1495480590572960000
+    389 1891490382
+    529 18831926

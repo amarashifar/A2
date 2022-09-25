@@ -1,0 +1,31 @@
+Script started on 2022-09-18 14:39:35-04:00
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ cut -f 6 ' ' downloaded_tweets_extend_original_nolf.txt > sortedInReply.txt
+cut: ' ': No such file or directory
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ sort sortedInReply.txt | uniq -c | sort -n | tail -n 11
+     31 29447428
+     36 140496030
+     36 172323296
+     37 1094971056358630000
+     39 544732668
+     46 3453306553
+     49 117810351
+     83 16050065
+    107 380648579
+    239 18831926
+  38916  
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ exit
+
+Script done on 2022-09-18 14:40:38-04:00
+2) Find the top 10 users who got the most replies from other users
+	
+     31 29447428
+     36 140496030
+     36 172323296
+     37 1094971056358630000
+     39 544732668
+     46 3453306553
+     49 117810351
+     83 16050065
+    107 380648579
+    239 18831926	
+Top Users who replied the most
