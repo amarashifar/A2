@@ -1,5 +1,7 @@
-Script started on 2022-09-24 21:28:42-04:00
-]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ grep "retweeted" downloaded_tweets_extend_nolf2.tsv | cut -f 2 | sort | uniq -c | sort -nr | head -n 30
+Script started on 2022-09-27 23:20:21-04:00
+bash: /home/amirali/.bashrc: line 12: unexpected EOF while looking for matching `"'
+bash: /home/amirali/.bashrc: line 20: syntax error: unexpected end of file
+bash-4.4$ grep "retweeted" downloaded_tweets_extend_nolf2.tsv | cut -f 2 | sort | uniq -c | sort -nr | head -n 30
    2065 45379403
    1678 77726331
    1641 870244616003403781
@@ -30,6 +32,6 @@ Script started on 2022-09-24 21:28:42-04:00
     698 118166719
     647 1308267623327518725
     634 3231054096
-]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ exit
-
-Script done on 2022-09-24 21:28:57-04:00
+bash-4.4$ exit
+The users who retweeted the most. 
+Script done on 2022-09-27 23:20:45-04:00

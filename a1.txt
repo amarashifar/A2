@@ -1,29 +1,22 @@
-Script started on 2022-09-20 21:26:55-04:00
-]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ cut -f 2 ' ' downloaded_tweets_extend_original_nolf.txt > repliedTheMost.txt
-cut: ' ': No such file or directory
-]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ sort repliedTheMost.txt | uniq -c | sort -n | tail -n 10
-    160 1290232189615890000
-    179 1229752606714720000
-    179 380648579
-    189 42836999
-    253 1219232377605640000
-    256 1231514832479940000
-    278 163018653
-    281 1495480590572960000
-    389 1891490382
-    529 18831926
-]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ exit
+Script started on 2022-09-27 23:12:47-04:00
+bash: /home/amirali/.bashrc: line 12: unexpected EOF while looking for matching `"'
+bash: /home/amirali/.bashrc: line 20: syntax error: unexpected end of file
+bash-4.4$ awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv > downloaded_tweets_extend_original_nolf2_NOBOT.tsv
+bash-4.4$ cut -f 2 downloaded_tweets_extend_nolf_original_nolf2_NOBOT.tsv | sort | uniq -c | sort -nr | head -n 10
+    375 1891490382
+    299 18831926
+    274 163018653
+    274 1495480590572961792
+    254 1231514832479948802
+    249 1219232377605644289
+    174 42836999
+    159 1229752606714728454
+    158 813314931147816960
+    141 1290232189615894531
+bash-4.4$ exit
+These are the top user who replied the most to other users. 
+The bots or similar users have been taken out. 
 
-Script done on 2022-09-20 21:27:23-04:00
-Find the top 10 users who replied the most to other users? 
-These are the top ten users who replied the most to the other users
-160 1290232189615890000
-    179 1229752606714720000
-    179 380648579
-    189 42836999
-    253 1219232377605640000
-    256 1231514832479940000
-    278 163018653
-    281 1495480590572960000
-    389 1891490382
-    529 18831926
+
+
+Script done on 2022-09-27 23:15:30-04:00

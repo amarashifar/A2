@@ -1,0 +1,10 @@
+0) Describe why MS-excel doesn't get confused by the newlines and displays the tweet text in a single row.
+ Describe in a few sentences how you would remove the newlines from the text field 
+Q0. Using Microsoft excel, we will removing the new lines from the field. We will use “=SUBSTITUTE(X2, CHAR(10), “ “), were X2 is the desired column number.
+ This means there is no new lines in the row. Microsoft excel does not get confused because of the quotations used will tell excel that the field will end
+. Furthermore one can use the tr command to remove commas with new lines and other non-desired characters. 
+
+
+**************************************************************************************************************************************************************
+
+

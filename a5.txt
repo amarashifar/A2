@@ -33,7 +33,12 @@ tr: warning: an unescaped backslash at end of string is not portable
     260 cdnpoli
     260 boycottrussia
 ]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ exit
-5. These are the top 30 hashtags used the most overall, regardless of capitalization
+5. These are the top 30 hashtags used the most overall, regardless of capitalization. 
+All the tweets have been changed to lower case. However, the hashtaged bots have been chosen
+by me to remain in the data set. Twitter still has bots and to not include the bots in the data set for 
+hastags would be munipulated the data set. As of today, Twitter continue to count the hastags posted by
+bots. As a result, the bot accounts have been included for the following questions: 5-8. 
+It is important to include the bots in finding the most common hashtags. 
 
 
 
