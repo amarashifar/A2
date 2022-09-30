@@ -5,9 +5,10 @@ Q0. Using Microsoft excel, we will removing the new lines from the field. We wil
 . Furthermore one can use the tr command to remove commas with new lines and other non-desired characters. 
 
 
-**************************************************************************************************************************************************************
+************************************************************************************************************
+****************************************************************************************************
 
-
+1). 
 Script started on 2022-09-27 23:12:47-04:00
 bash: /home/amirali/.bashrc: line 12: unexpected EOF while looking for matching `"'
 bash: /home/amirali/.bashrc: line 20: syntax error: unexpected end of file
@@ -31,12 +32,14 @@ The bots or similar users have been taken out.
 
 Script done on 2022-09-27 23:15:30-04:00
 ****************************************************************************
-
+****************************************************************************
+2. 
 Script started on 2022-09-27 23:08:22-04:00
 bash: /home/amirali/.bashrc: line 12: unexpected EOF while looking for matching `"'
 bash: /home/amirali/.bashrc: line 20: syntax error: unexpected end of file
 bash-4.4$ awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv > downloaded_tweets_extend_original_nolf2_NOBOT.tsv
-bash-4.4$ cut -f 6 downloaded_tweets_extend_original_nolf2_NOBOT.tsv | sort | uniq -c | sort -nr | head -n  11
+bash-4.4$ cut -f 6 downloaded_tweets_extend_original_nolf2_NOBOT.tsv | sort | uniq -c | sort -nr | head -n 
+ 11
   38739 
      46 3453306553
      28 29447428
@@ -54,9 +57,11 @@ These are the top users who replied the most. Sometimes, it is ok
 to reply to your own tweet if you are making a thread. However, 
 in this case, the bots or the ones that have replied to themselves
 have been eliminated. 
-
-
 Script done on 2022-09-27 23:08:41-04:00
+
+****************************************************************************
+****************************************************************************
+3). 
 Script started on 2022-09-27 23:20:21-04:00
 bash: /home/amirali/.bashrc: line 12: unexpected EOF while looking for matching `"'
 bash: /home/amirali/.bashrc: line 20: syntax error: unexpected end of file
@@ -94,6 +99,11 @@ bash-4.4$ grep "retweeted" downloaded_tweets_extend_nolf2.tsv | cut -f 2 | sort 
 bash-4.4$ exit
 The users who retweeted the most. 
 Script done on 2022-09-27 23:20:45-04:00
+
+
+********************************************************************************
+**************************************************************************
+5). 
 Script started on 2022-09-24 21:06:01-04:00
 ]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ cut -f 4 downloaded_tweets_extend_nolf2.tsv | tr "," "\n" | tr [:upper:] [:lower:]| tr -d ' ' | tr -d '\"' |tr -d '"\'|  sort | uniq -c | sort -nr | head -n 31
 tr: warning: an unescaped backslash at end of string is not portable
@@ -129,6 +139,8 @@ tr: warning: an unescaped backslash at end of string is not portable
     260 cdnpoli
     260 boycottrussia
 ]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ exit
+
+
 5. These are the top 30 hashtags used the most overall, regardless of capitalization. 
 All the tweets have been changed to lower case. However, the hashtaged bots have been chosen
 by me to remain in the data set. Twitter still has bots and to not include the bots in the data set for 
@@ -136,9 +148,11 @@ hastags would be munipulated the data set. As of today, Twitter continue to coun
 bots. As a result, the bot accounts have been included for the following questions: 5-8. 
 It is important to include the bots in finding the most common hashtags. 
 
-
-
 Script done on 2022-09-24 21:06:24-04:00
+**********************************************************************************************************************************************************
+**********************************************************************************************************************************************************
+
+6). 
 Script started on 2022-09-24 21:18:27-04:00
 ]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ grep "retweeted" downloaded_tweets_extend_nolf2.tsv | cut -f 4 | tr "," "\n" | tr [:upper:] [:lower:]| tr -d ' ' | tr -d '\"' |tr -d '"\'|  sort | uniq -c | sort -nr | head -n 30
 tr: warning: an unescaped backslash at end of string is not portable
@@ -175,10 +189,14 @@ tr: warning: an unescaped backslash at end of string is not portable
 ]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ exit
 These are the most retweeted hashtags in the data set. They are all converted to lower case since twitter is also case insensetive
 
+**********************************************************************************************************************************************************
+**********************************************************************************************************************************************************
 
+
+7. 
 Script done on 2022-09-24 21:19:13-04:00
 Script started on 2022-09-24 21:15:15-04:00
-]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ grep "replied_to" downloaded_tweets_extend_nolf2.tsv | cut -f 4 | tr "," "\n" | tr [:upper:] [:lower:]| tr -d ' ' | tr -d '\"' |tr -d '"\'|  sort | uniq -c | sort -nr | head -n 30[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1@r[1@e[1@p[1@l[1@i[1@e[1@d[1@_[1@t[1@o
+]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ grep "replied_to" downloaded_tweets_extend_nolf2.tsv | cut -f 4 | tr "," "\n" | tr [:upper:] [:lower:]| tr -d ' ' | tr -d '\"' |tr -d '"\'|  sort | uniq -c | sort -nr | head -n 30
 tr: warning: an unescaped backslash at end of string is not portable
     883 fbpe
     876 followbackfriday
@@ -214,8 +232,13 @@ tr: warning: an unescaped backslash at end of string is not portable
 These are the hashtags which have been used in replied_to tweets. The command makes every hashtag
 lower case since twitter is case insensetive. 
 
-
 Script done on 2022-09-24 21:15:52-04:00
+**********************************************************************************************************************************************************
+**********************************************************************************************************************************************************
+
+
+8). 
+
 Script started on 2022-09-24 21:14:21-04:00
 ]0;amirali@sjsu:~/A2[amirali@sjsu A2]$ grep "quoted" downloaded_tweets_extend_nolf2.tsv | cut -f 4 | tr "," "\n" | tr [:upper:] [:lower:]| tr -d ' ' | tr -d '\"' |tr -d '"\'|  sort | uniq -c | sort -nr | head -n 30
 tr: warning: an unescaped backslash at end of string is not portable
